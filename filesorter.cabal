@@ -32,10 +32,11 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , optparse-applicative
     , pretty-show
   default-language: Haskell2010
 
-executable filesorter-exe
+executable filesorter
   main-is: Main.hs
   other-modules:
       Paths_filesorter
@@ -45,6 +46,7 @@ executable filesorter-exe
   build-depends:
       base >=4.7 && <5
     , filesorter
+    , optparse-applicative
     , pretty-show
   default-language: Haskell2010
 
@@ -59,5 +61,6 @@ test-suite filesorter-test
   build-depends:
       base >=4.7 && <5
     , filesorter
+    , optparse-applicative
     , pretty-show
   default-language: Haskell2010
